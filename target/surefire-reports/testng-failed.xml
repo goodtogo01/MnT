@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MnT Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.Utils.ExtentTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Employee Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.test.NameSectionsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setupExtentReport"/>
+          <include name="initExtentForClass"/>
+          <include name="getEmployeeDetails"/>
+          <include name="flushExtentReport"/>
+          <include name="setupDriverAndTest"/>
+          <include name="captureResultAndTeardown"/>
+          <include name="tearUp"/>
+        </methods>
+      </class> <!-- com.test.NameSectionsTest -->
+    </classes>
+  </test> <!-- Employee Tests(failed) -->
+</suite> <!-- Failed suite [MnT Suite] -->

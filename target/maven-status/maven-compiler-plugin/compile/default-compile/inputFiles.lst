@@ -1,4 +1,8 @@
 /Users/khosruzzaman/JAVA-WORKS/mnt/src/main/java/com/Setup/BaseSetup.java
-/Users/khosruzzaman/JAVA-WORKS/mnt/src/main/java/com/Utiil/Utilities.java
+/Users/khosruzzaman/JAVA-WORKS/mnt/src/main/java/com/Setup/Reports.java
+/Users/khosruzzaman/JAVA-WORKS/mnt/src/main/java/com/Utils/ExtentReportManager.java
+/Users/khosruzzaman/JAVA-WORKS/mnt/src/main/java/com/Utils/ExtentTestNGListener.java
+/Users/khosruzzaman/JAVA-WORKS/mnt/src/main/java/com/Utils/ScreenshotUtility.java
+/Users/khosruzzaman/JAVA-WORKS/mnt/src/main/java/com/Utils/Utilities.java
 /Users/khosruzzaman/JAVA-WORKS/mnt/src/main/java/com/page/DepartmentSections.java
 /Users/khosruzzaman/JAVA-WORKS/mnt/src/main/java/com/page/NameSections.java

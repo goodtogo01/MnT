@@ -149,10 +149,6 @@
 					<reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
 					<testFailureIgnore>false</testFailureIgnore>
 
-					<!-- Pass Extent report directory as a system property -->
-					<systemPropertyVariables>
-						<extent.report.folder>${extent.report.folder}</extent.report.folder>
-					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 
@@ -165,10 +161,5 @@
 
 		</plugins>
 
-		<resources>
-			<resource>
-				<directory>resources</directory>
-			</resource>
-		</resources>
 	</build>
 </project>

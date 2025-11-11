@@ -1,56 +1,54 @@
 package com.test;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-import com.Setup.BaseSetup;
-import com.Utiil.Utilities;
+import com.Setup.Reports;
+import com.Utils.Utilities;
 import com.page.DepartmentSections;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DepartmentSectionsTest extends BaseSetup {
-	WebDriverManager driver;
-	public static Utilities util;
-	public static DepartmentSections departmentSections;
+public class DepartmentSectionsTest extends Reports {
 
-	@BeforeMethod
-	public static void tearUp() {
-		initDriver();
-		util = new Utilities();
-		departmentSections = new DepartmentSections(getDriver());
-	}
+    WebDriverManager driver;
+    public Utilities util;
+    public DepartmentSections departmentSections;
 
-	@Test
-	public void titleTest() {
-		String expectedTitle = "Employee Records Table";
+    @BeforeMethod
+    public void tearUp() {
+        initDriver();
+        util = new Utilities();
+        departmentSections = new DepartmentSections(getDriver());
+    }
 
-		System.out.println("Title found as: " + getDriver().getTitle());
+    @Test
+    public void titleTest() {
+        getTest().info("Validate Page title and Print.");
+        String expectedTitle = "Employee Records Table";
 
-		Assert.assertEquals(getDriver().getTitle(), expectedTitle, "Title did not matched!!!");
-	}
-	
-	
-	@Test
-	public static void getDeptCount() {
-		// can be use any dept. name
-		int depcount = departmentSections.getEngineeringDepartmentCount("Engineering"); 
-		System.out.println("Total number of Engineering department employees: " +depcount);
-		int numberOfDept = departmentSections.getTotalNumberOfDepartment();
-		System.out.println("Number of dept: "+numberOfDept);
-	}
+        System.out.println("Title found as: " + getDriver().getTitle());
+        Assert.assertEquals(getDriver().getTitle(), expectedTitle, "Title did not match!!!");
+        getTest().pass("✅ Capture and validate page title successfully.");
+    }
 
-	
-	@AfterMethod
-	public void tearDown() {
-		quitDriver();
-	}
+    @Test
+    public void getDeptCount() {
+        getTest().info("Count Number of Departments");
+
+        int depCount = departmentSections.getEngineeringDepartmentCount("Engineering");
+        System.out.println("Total number of Engineering department employees: " + depCount);
+
+        int numberOfDept = departmentSections.getTotalNumberOfDepartment();
+        System.out.println("Number of departments: " + numberOfDept);
+
+        getTest().pass("✅ Calculate number of departments successfully.");
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        quitDriver();
+    }
 }
