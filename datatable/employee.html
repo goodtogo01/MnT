@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Records Table</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 95%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+    }
+    th {
+      background-color: #0077cc;
+      color: white;
+      cursor: pointer;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #e0f7fa;
+    }
+    .delete-btn {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+    .delete-btn:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Employee Records</h1>
+
+<table id="employeeTable">
+  <thead>
+    <tr>
+      <th>ID</th><th>Name</th><th>Department</th><th>Email</th><th>Location</th>
+      <th>Position</th><th>Experience</th><th>Status</th><th>Salary</th><th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>101</td><td>Alice Johnson</td><td>Engineering</td><td>alice.j@company.com</td><td>New York</td><td>Developer</td><td>5</td><td>Active</td><td>85000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>102</td><td>Bob Smith</td><td>Marketing</td><td>bob.s@company.com</td><td>Chicago</td><td>Manager</td><td>7</td><td>Active</td><td>95000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>103</td><td>Carol Lee</td><td>HR</td><td>carol.l@company.com</td><td>San Francisco</td><td>Recruiter</td><td>3</td><td>On Leave</td><td>72000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>104</td><td>David Kim</td><td>Finance</td><td>david.k@company.com</td><td>Boston</td><td>Analyst</td><td>4</td><td>Active</td><td>78000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>105</td><td>Eva Green</td><td>Design</td><td>eva.g@company.com</td><td>Seattle</td><td>UX Designer</td><td>6</td><td>Active</td><td>87000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>106</td><td>Frank White</td><td>Engineering</td><td>frank.w@company.com</td><td>Denver</td><td>DevOps</td><td>5</td><td>Resigned</td><td>82000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>107</td><td>Grace Hall</td><td>Marketing</td><td>grace.h@company.com</td><td>Miami</td><td>Content Lead</td><td>8</td><td>Active</td><td>91000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>108</td><td>Henry Adams</td><td>HR</td><td>henry.a@company.com</td><td>Atlanta</td><td>Coordinator</td><td>2</td><td>On Leave</td><td>69000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>109</td><td>Ivy Brooks</td><td>Finance</td><td>ivy.b@company.com</td><td>Dallas</td><td>Accountant</td><td>4</td><td>Active</td><td>76000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>110</td><td>Jack Carter</td><td>Design</td><td>jack.c@company.com</td><td>Los Angeles</td><td>Graphic Designer</td><td>3</td><td>Resigned</td><td>74000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>111</td><td>Karen Davis</td><td>Engineering</td><td>karen.d@company.com</td><td>Houston</td><td>QA Engineer</td><td>6</td><td>Active</td><td>80000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>112</td><td>Leo Evans</td><td>Marketing</td><td>leo.e@company.com</td><td>Philadelphia</td><td>SEO Specialist</td><td>5</td><td>Active</td><td>77000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>113</td><td>Mia Foster</td><td>HR</td><td>mia.f@company.com</td><td>San Diego</td><td>HR Manager</td><td>7</td><td>Active</td><td>88000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>114</td><td>Nate Gray</td><td>Finance</td><td>nate.g@company.com</td><td>Portland</td><td>Controller</td><td>9</td><td>Active</td><td>99000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>115</td><td>Olivia Hunt</td><td>Design</td><td>olivia.h@company.com</td><td>Las Vegas</td><td>Creative Director</td><td>10</td><td>Active</td><td>105000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>116</td><td>Paul Irwin</td><td>Engineering</td><td>paul.i@company.com</td><td>Orlando</td><td>Architect</td><td>11</td><td>Active</td><td>115000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>117</td><td>Quinn James</td><td>Marketing</td><td>quinn.j@company.com</td><td>Phoenix</td><td>Brand Strategist</td><td>6</td><td>On Leave</td><td>83000</td><td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td></tr>
+    <tr><td>118</td><td>Rachel King</td><td>HR</td><td>rachel.k@company.com</td><td>Charlotte</td><td>HR Assistant</

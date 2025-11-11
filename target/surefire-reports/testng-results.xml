@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-11T00:39:45 EST" name="Suite" finished-at="2025-11-11T00:39:52 EST" duration-ms="7343">
+    <groups>
+    </groups>
+    <test started-at="2025-11-11T00:39:45 EST" name="Test" finished-at="2025-11-11T00:39:52 EST" duration-ms="7343">
+      <class name="com.test.DepartmentSectionsTest">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.test.DepartmentSectionsTest@2ed2d9cb]" started-at="2025-11-11T00:39:49 EST" name="tearUp" finished-at="2025-11-11T00:39:51 EST" duration-ms="1196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="getDeptCount()[pri:0, instance:com.test.DepartmentSectionsTest@2ed2d9cb]" started-at="2025-11-11T00:39:51 EST" name="getDeptCount" finished-at="2025-11-11T00:39:51 EST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDeptCount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.DepartmentSectionsTest@2ed2d9cb]" started-at="2025-11-11T00:39:51 EST" name="tearDown" finished-at="2025-11-11T00:39:51 EST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.test.DepartmentSectionsTest@2ed2d9cb]" started-at="2025-11-11T00:39:51 EST" name="tearUp" finished-at="2025-11-11T00:39:52 EST" duration-ms="1203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="titleTest()[pri:0, instance:com.test.DepartmentSectionsTest@2ed2d9cb]" started-at="2025-11-11T00:39:52 EST" name="titleTest" finished-at="2025-11-11T00:39:52 EST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.DepartmentSectionsTest@2ed2d9cb]" started-at="2025-11-11T00:39:52 EST" name="tearDown" finished-at="2025-11-11T00:39:52 EST" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.DepartmentSectionsTest -->
+      <class name="com.test.NameSectionsTest">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.test.NameSectionsTest@156b88f5]" started-at="2025-11-11T00:39:45 EST" name="tearUp" finished-at="2025-11-11T00:39:48 EST" duration-ms="2916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="getEmployeeDetails()[pri:0, instance:com.test.NameSectionsTest@156b88f5]" started-at="2025-11-11T00:39:48 EST" name="getEmployeeDetails" finished-at="2025-11-11T00:39:48 EST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployeeDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.NameSectionsTest@156b88f5]" started-at="2025-11-11T00:39:48 EST" name="tearDown" finished-at="2025-11-11T00:39:48 EST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.test.NameSectionsTest@156b88f5]" started-at="2025-11-11T00:39:48 EST" name="tearUp" finished-at="2025-11-11T00:39:49 EST" duration-ms="1250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="titleTest()[pri:0, instance:com.test.NameSectionsTest@156b88f5]" started-at="2025-11-11T00:39:49 EST" name="titleTest" finished-at="2025-11-11T00:39:49 EST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.NameSectionsTest@156b88f5]" started-at="2025-11-11T00:39:49 EST" name="tearDown" finished-at="2025-11-11T00:39:49 EST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.NameSectionsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
