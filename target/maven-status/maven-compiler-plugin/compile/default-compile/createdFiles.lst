@@ -1,3 +1,8 @@
 com/Setup/BaseSetup.class
 com/page/NameSections.class
+com/Utils/ExtentReportManager.class
 com/page/DepartmentSections.class
+com/Utils/ExtentTestNGListener.class
+com/Setup/Reports.class
+com/Utils/Utilities.class
+com/Utils/ScreenshotUtility.class

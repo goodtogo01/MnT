@@ -2,6 +2,7 @@ package com.Setup;
 
 import java.lang.reflect.Method;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -44,18 +45,21 @@ public class Reports extends BaseSetup {
     public void captureResultAndTeardown(ITestResult result) {
         try {
             if (result.getStatus() == ITestResult.FAILURE) {
-                String screenshotPath = ScreenshotUtility.captureScreenshot(getDriver(), result.getName());
-                test.get().fail(result.getThrowable(),
-                        MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-            } else if (result.getStatus() == ITestResult.SUCCESS) {
-                test.get().pass("✅ Test Passed Successfully.");
-            } else if (result.getStatus() == ITestResult.SKIP) {
-                test.get().skip("⚠️ Test Skipped: " + result.getThrowable());
+                WebDriver driver = BaseSetup.getDriver();  // must not be null
+                String screenshotPath = ScreenshotUtility.captureScreenshot(driver, result.getName());
+                getTest().fail(result.getThrowable(),
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+            }
+            else if (result.getStatus() == ITestResult.SUCCESS) {
+                getTest().pass("✅ Test Passed");
+            }
+            else if (result.getStatus() == ITestResult.SKIP) {
+                getTest().skip(result.getThrowable());
             }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            quitDriver(); // quit driver after each test
+            quitDriver(); // quit only after report handling
         }
     }
 

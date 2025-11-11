@@ -37,11 +37,8 @@ public class NameSectionsTest extends Reports {
 
     @Test
     public void getEmployeeDetails() {
-        getTest().info("Fetching Employee Details for ID: 547");
-        nameSections.findEmployee("547");
-
-        // Example fail to verify report
-        Assert.assertTrue(false, "Simulated failure to test screenshot capture");
+        getTest().info("Fetching Employee Details by name");
+        nameSections.findEmployee("Karen Davis");
         getTest().pass("✅ Employee details fetched successfully");
     }
 

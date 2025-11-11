@@ -6,7 +6,12 @@
       <class name="com.test.NameSectionsTest">
         <methods>
           <include name="tearDown"/>
+          <include name="setupExtentReport"/>
+          <include name="initExtentForClass"/>
           <include name="getEmployeeDetails"/>
+          <include name="flushExtentReport"/>
+          <include name="captureResultAndTeardown"/>
+          <include name="setupDriverAndTest"/>
           <include name="tearUp"/>
         </methods>
       </class> <!-- com.test.NameSectionsTest -->
